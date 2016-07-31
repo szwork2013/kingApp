@@ -2,6 +2,7 @@
 
 /**
  * Module dependencies.
+ * glob获取目录下的文件
  */
 var _ = require('lodash'),
   chalk = require('chalk'),

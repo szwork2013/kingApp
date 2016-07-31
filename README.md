@@ -2,19 +2,25 @@ git操作：
 
 创建一个项目：
 
+```bash
 echo "# kingApp" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/xiaoyang2022/kingApp.git
 git push -u origin master
+```
 
 推送到已经有的项目：
 
+```bash
 git remote add origin https://github.com/xiaoyang2022/kingApp.git
 git push -u origin master
+```
 
 更新项目文件：
+
+```bash
 //上传
 $ git init
 $ git add .
@@ -24,7 +30,9 @@ $ git push -u origin master
 //有时容易出现：remote origin already exists.解决办法如下：
 $ git remote rm origin
 $ git push -u origin master
+```
 
+```bash
 //下载
 $ git pull 
 //失败的话试：git pull origin master
@@ -34,6 +42,7 @@ $ git pull origin master
 $ git clean -d -fx
 //提示origin存在错误
 $ git remote rm origin
+```
 
 
 
