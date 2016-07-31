@@ -3,7 +3,6 @@
 /* eslint最大的吸引力就在于可以支持js、jsx、es6(es2015)等代码的检查 */
 
 module.exports = {
-  //客户端
   client: {
     lib: {
       css: [
@@ -51,7 +50,6 @@ module.exports = {
     views: ['modules/*/client/views/**/*.html'],
     templates: ['build/templates.js']
   },
-  //服务端
   server: { 
     gulpConfig: ['gulpfile.js'],
     allJS: ['server.js', 'config/**/*.js', 'modules/*/server/**/*.js'],
