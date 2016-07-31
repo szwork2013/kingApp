@@ -1,5 +1,7 @@
 'use strict';
-
+/**
+ * 重置密码
+ */
 var nodemailer = require('nodemailer'),
   mongoose = require('mongoose'),
   chalk = require('chalk'),

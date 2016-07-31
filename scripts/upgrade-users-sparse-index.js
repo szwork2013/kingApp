@@ -1,4 +1,8 @@
 ﻿'use strict';
+
+/**
+ * 升级用户功能
+ */
 // Set the Node ENV
 process.env.NODE_ENV = 'development';
 

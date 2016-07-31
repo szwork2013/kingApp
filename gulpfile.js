@@ -1,6 +1,10 @@
 'use strict';
 
 /**
+ * gulp工程自动化管理
+ */
+
+/**
  * Module dependencies.
  */
 var _ = require('lodash'),

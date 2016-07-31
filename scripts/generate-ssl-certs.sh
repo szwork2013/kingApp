@@ -9,6 +9,7 @@ then
 fi
 
 echo "Generating self-signed certificates..."
+
 mkdir -p ./config/sslcerts
 openssl genrsa -out ./config/sslcerts/key.pem 4096
 openssl req -new -key ./config/sslcerts/key.pem -out ./config/sslcerts/csr.pem

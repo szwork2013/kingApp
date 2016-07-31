@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Module dependencies.
+ * 自动测试
  */
 
 var path = require('path');
