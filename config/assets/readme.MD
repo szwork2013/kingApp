@@ -1,1 +1,1 @@
-webpack
+资源配置采用webpack和gulp做资源管理和项目的工程自动化。待后处理
