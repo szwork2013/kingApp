@@ -1,8 +1,9 @@
 'use strict';
 
-/* eslint comma-dangle:[0, "only-multiline"] */
+/* eslint最大的吸引力就在于可以支持js、jsx、es6(es2015)等代码的检查 */
 
 module.exports = {
+  //客户端
   client: {
     lib: {
       css: [
@@ -50,8 +51,8 @@ module.exports = {
     views: ['modules/*/client/views/**/*.html'],
     templates: ['build/templates.js']
   },
-  server: {
-    gruntConfig: ['gruntfile.js'],
+  //服务端
+  server: { 
     gulpConfig: ['gulpfile.js'],
     allJS: ['server.js', 'config/**/*.js', 'modules/*/server/**/*.js'],
     models: 'modules/*/server/models/**/*.js',

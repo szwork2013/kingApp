@@ -1,6 +1,6 @@
 'use strict';
 
-/* eslint comma-dangle:[0, "only-multiline"] */
+/* eslint最大的吸引力就在于可以支持js、jsx、es6(es2015)等代码的检查 */
 
 module.exports = {
   client: {
