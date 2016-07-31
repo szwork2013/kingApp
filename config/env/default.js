@@ -1,9 +1,11 @@
 'use strict';
-
+/**
+ * 默认环境模式配置 
+ */
 module.exports = {
   app: {
-    title: 'MEAN.JS',
-    description: 'Full-Stack JavaScript with MongoDB, Express, AngularJS, and Node.js',
+    title: 'kingApp.JS',
+    description: 'Full-Stack JavaScript with MongoDB, Express, AngularJS2.X, and Node.js',
     keywords: 'mongodb, express, angularjs, node.js, mongoose, passport',
     googleAnalyticsTrackingID: process.env.GOOGLE_ANALYTICS_TRACKING_ID || 'GOOGLE_ANALYTICS_TRACKING_ID'
   },

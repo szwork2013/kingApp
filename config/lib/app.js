@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Module dependencies.
+ * kingApp应用配置
  */
 var config = require('../config'),
   mongoose = require('./mongoose'),
@@ -16,7 +16,7 @@ function seedDB() {
   }
 }
 
-// Initialize Models
+// 初始化模型
 mongoose.loadModels(seedDB);
 
 module.exports.loadModels = function loadModels() {

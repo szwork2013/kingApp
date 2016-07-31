@@ -1,10 +1,12 @@
 'use strict';
 
 var defaultEnvConfig = require('./default');
-
+/**
+ * 研发环境模式配置 
+ */
 module.exports = {
   db: {
-    uri: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://' + (process.env.DB_1_PORT_27017_TCP_ADDR || 'localhost') + '/mean-dev',
+    uri: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://' + (process.env.DB_1_PORT_27017_TCP_ADDR || 'localhost') + '/kingApp-dev',
     options: {
       user: '',
       pass: ''

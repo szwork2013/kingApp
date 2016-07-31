@@ -1,5 +1,9 @@
 'use strict';
 
+/**
+ * 用户状态配置
+ */
+
 var _ = require('lodash'),
   config = require('../config'),
   mongoose = require('mongoose'),

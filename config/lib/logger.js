@@ -1,5 +1,12 @@
 'use strict';
 
+/**
+ * 日志服务配置 
+ */
+
+/**
+ * Winston是Node.js最流行的日志框架之一
+ */
 var _ = require('lodash'),
   config = require('../config'),
   chalk = require('chalk'),

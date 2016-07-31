@@ -1,5 +1,9 @@
 'use strict';
 
+/**
+ * 通讯引擎配置
+ */
+
 // Load the module dependencies
 var config = require('../config'),
   path = require('path'),
@@ -12,7 +16,7 @@ var config = require('../config'),
   session = require('express-session'),
   MongoStore = require('connect-mongo')(session);
 
-// Define the Socket.io configuration method
+// 定义Socket.io配置方法
 module.exports = function (app, db) {
   var server;
   if (config.secure && config.secure.ssl === true) {

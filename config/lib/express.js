@@ -1,7 +1,11 @@
 'use strict';
 
 /**
- * Module dependencies.
+ * 服务引擎配置
+ */
+
+/**
+ * 模块依赖
  */
 var config = require('../config'),
   express = require('express'),
@@ -22,7 +26,7 @@ var config = require('../config'),
   lusca = require('lusca');
 
 /**
- * Initialize local variables
+ * 初始化本地变量
  */
 module.exports.initLocalVariables = function (app) {
   // Setting application local variables
@@ -49,7 +53,7 @@ module.exports.initLocalVariables = function (app) {
 };
 
 /**
- * Initialize application middleware
+ * 初始化中间件
  */
 module.exports.initMiddleware = function (app) {
   // Showing stack errors
@@ -95,7 +99,7 @@ module.exports.initMiddleware = function (app) {
 };
 
 /**
- * Configure view engine
+ * 定义模板引擎
  */
 module.exports.initViewEngine = function (app) {
   // Set swig as the template engine
@@ -107,7 +111,7 @@ module.exports.initViewEngine = function (app) {
 };
 
 /**
- * Configure Express session
+ * 定义服务会话
  */
 module.exports.initSession = function (app, db) {
   // Express MongoDB session storage
@@ -132,7 +136,7 @@ module.exports.initSession = function (app, db) {
 };
 
 /**
- * Invoke modules server configuration
+ * 服务器调用模块配置
  */
 module.exports.initModulesConfiguration = function (app, db) {
   config.files.server.configs.forEach(function (configPath) {
@@ -141,7 +145,7 @@ module.exports.initModulesConfiguration = function (app, db) {
 };
 
 /**
- * Configure Helmet headers configuration
+ * 定义头配置
  */
 module.exports.initHelmetHeaders = function (app) {
   // Use helmet to secure Express headers
@@ -159,7 +163,7 @@ module.exports.initHelmetHeaders = function (app) {
 };
 
 /**
- * Configure the modules static routes
+ * 定义模型静态路由
  */
 module.exports.initModulesClientRoutes = function (app) {
   // Setting the app router and static folder
@@ -172,7 +176,7 @@ module.exports.initModulesClientRoutes = function (app) {
 };
 
 /**
- * Configure the modules ACL policies
+ * 定义模型ACL policies
  */
 module.exports.initModulesServerPolicies = function (app) {
   // Globbing policy files
@@ -182,7 +186,7 @@ module.exports.initModulesServerPolicies = function (app) {
 };
 
 /**
- * Configure the modules server routes
+ * 配置模块服务器路由
  */
 module.exports.initModulesServerRoutes = function (app) {
   // Globbing routing files
@@ -192,7 +196,7 @@ module.exports.initModulesServerRoutes = function (app) {
 };
 
 /**
- * Configure error handling
+ * 配置错误处理
  */
 module.exports.initErrorRoutes = function (app) {
   app.use(function (err, req, res, next) {
@@ -210,7 +214,7 @@ module.exports.initErrorRoutes = function (app) {
 };
 
 /**
- * Configure Socket.io
+ * 配置Socket.io
  */
 module.exports.configureSocketIO = function (app, db) {
   // Load the Socket.io configuration
@@ -221,7 +225,7 @@ module.exports.configureSocketIO = function (app, db) {
 };
 
 /**
- * Initialize the Express application
+ * 初始化应用
  */
 module.exports.init = function (db) {
   // Initialize express app

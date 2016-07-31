@@ -1,14 +1,18 @@
 'use strict';
 
 /**
- * Module dependencies.
+ * 数据引擎配置
+ */
+
+/**
+ * 模块依赖.
  */
 var config = require('../config'),
   chalk = require('chalk'),
   path = require('path'),
   mongoose = require('mongoose');
 
-// Load the mongoose models
+// 导入数据模型
 module.exports.loadModels = function (callback) {
   // Globbing model files
   config.files.server.models.forEach(function (modelPath) {
@@ -18,7 +22,7 @@ module.exports.loadModels = function (callback) {
   if (callback) callback();
 };
 
-// Initialize Mongoose
+// 初始化Mongoose链接
 module.exports.connect = function (cb) {
   var _this = this;
 
@@ -38,6 +42,7 @@ module.exports.connect = function (cb) {
   });
 };
 
+// 断开链接
 module.exports.disconnect = function (cb) {
   mongoose.disconnect(function (err) {
     console.info(chalk.yellow('Disconnected from MongoDB.'));
